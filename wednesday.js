@@ -38,5 +38,10 @@ const exec = require('child_process').exec;
 exec('npm init -y', (err, stdout) => {
   console.log(stdout);
   console.log('over');
-  
+
+  const exec = require('child_process').exec;
+  exec('npm install --sav-dev mocha eslint chai husky', (err, stdout) => {
+    console.log(stdout);
+    console.log('over');
+  });
 });
