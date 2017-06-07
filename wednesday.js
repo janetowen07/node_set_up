@@ -1,4 +1,6 @@
 const fs = require('fs');
+const exec = require('child_process').exec;
+
 // run npm mocha, chai, eslint, husky
 // update packageJSON test scripts
 
@@ -34,14 +36,7 @@ fs.mkdir('./spec', (err) => {
   });
 });
 
-const exec = require('child_process').exec;
-exec('npm init -y', (err, stdout) => {
+exec('npm init -y && npm install --save-dev mocha eslint chai husky', (err, stdout) => {
+  if (err) throw err;
   console.log(stdout);
-  console.log('over');
-
-  const exec = require('child_process').exec;
-  exec('npm install --sav-dev mocha eslint chai husky', (err, stdout) => {
-    console.log(stdout);
-    console.log('over');
-  });
 });

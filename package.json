@@ -6,7 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janetowen07/node_set_up.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janetowen07/node_set_up/issues"
+  },
+  "homepage": "https://github.com/janetowen07/node_set_up#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "eslint": "^3.19.0",
+    "husky": "^0.13.4",
+    "mocha": "^3.4.2"
+  }
 }
